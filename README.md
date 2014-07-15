@@ -11,10 +11,10 @@ Call any async function synchronously with one simple call.
 
 ## Usage
 
-    var sync = require('sync-me')
-    sync(**function_name**,**[arguments]**)
+####var sync = require('sync-me')
+####sync(**function_name**,**[arguments]**)
 
-To execute asynchronous function in a synchronous way, call sync() and pass your function as a first argument followed by the arguments you want to pass to your function. Skip the callback.
+To execute asynchronous function in a synchronous way, call `sync()` and pass your function as a first argument followed by the arguments you want to pass to your function. Skip the callback.
 
 For example, to call `fs.readFile()` in a synchronous way:
 
@@ -69,6 +69,7 @@ Returning multiple variables in a callback response:
 
 * The function that you can convert may take any amount of arguments, but **callback** must be on the **last** position.
 * Data returned by `sync()` depends on variables passed to the original callback. If callback takes a simple value, it will return that value. Otherwise, it will return an array of values
+* For now, only functions with single callback are accepted. If function passed to `sync()` takes multiple callbacks, only the result of the last provided callback will get returned. Other callbacks most likely will get called asynchronously.
 * I am aware that `fs.readFile()` has its synchronous counterpart `fs.readFileSync()`.I used it only as an example.
 
 ## Release History

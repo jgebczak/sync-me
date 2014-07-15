@@ -1,0 +1,30 @@
+{
+  "name": "sync-me",
+  "version": "0.1.0",
+  "description": "Call any async function synchronously with one simple call",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jgebczak/sync-me.git"
+  },
+  "readmeFilename": "README.md",
+  "keywords": [
+    "async",
+    "sync",
+    "async wrapper",
+    "callbacks",
+    "asynchronous",
+    "synchronous"
+  ],
+ "dependencies": {
+    "deasync": "~0.0.7",
+  },
+  "author": "James Gebczak",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.x"
+  }
+}

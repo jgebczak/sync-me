@@ -20,7 +20,7 @@
     "synchronous"
   ],
  "dependencies": {
-    "deasync": "~0.0.7",
+    "deasync": "~0.0.7"
   },
   "author": "James Gebczak",
   "license": "MIT",

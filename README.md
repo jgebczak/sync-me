@@ -3,8 +3,6 @@ sync-me
 
 Call any async function synchronously with one simple call.
 
-**sync-me** uses .sleep() function from **deasync** package.
-
 ## Installation
 
     npm install sync-me
@@ -71,6 +69,7 @@ Returning multiple variables in a callback response:
 * Data returned by `sync()` depends on variables passed to the original callback. If callback takes a simple value, it will return that value. Otherwise, it will return an array of values
 * For now, only functions with single callback are accepted. If function passed to `sync()` takes multiple callbacks, only the result of the last provided callback will get returned. Other callbacks most likely will get called asynchronously.
 * I am aware that `fs.readFile()` has its synchronous counterpart `fs.readFileSync()`.I used it only as an example.
+* **sync-me** is based on `.sleep()` function from [deasync](https://www.npmjs.org/package/deasync) package providing more flexibility and complete return values (array) compared to the original.
 
 ## Release History
 

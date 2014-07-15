@@ -1,6 +1,6 @@
 {
   "name": "sync-me",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Call any async function synchronously with one simple call",
   "main": "index.js",
   "scripts": {

@@ -22,7 +22,7 @@ For example, to call `fs.readFile()` in a synchronous way:
 
 ## Examples
 
-Synchronous readFile:
+###Synchronous readFile:
 
     var sync = require('sync-me');
     var fs = require('fs');
@@ -32,7 +32,7 @@ Synchronous readFile:
     process.stdout.write(content);
     process.exit(1);
 
-Synchronous setTimeout:
+###Synchronous setTimeout:
 
     var sync = require('sync-me');
 
@@ -47,7 +47,7 @@ Synchronous setTimeout:
     sync(waitSecond);
     process.exit(1);
 
-Returning multiple variables in a callback response:
+###Returning multiple variables in a callback response:
 
     var sync = require('sync-me');
 
